@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2- Timetable</title>
+</head>
+<body>
+    <h2>College Timetable</h2>
+    <!-- <table>: Used to create  table (border="1") display graid lines)-->
+    <table border="1" cellpadding="10" cellspacing="0">
+
+    <!-- <thead>: Groups the header content of the table-->
+    <thead>
+        <!-- <tr>:Defines a new tavvle row -->
+        <!--<th>:MAi column header cell (rendered as bold and centered)  -->
+        <tr>
+            <th>Day / Time</th>
+            <th>09:00 AM - 10:30 AM</th>
+            <th>10:30 AM - 12:00 PM</th>
+            <th>12:00 PM - 12:30 PM</th>
+            <th>12:30 PM - 02:00 PM</th>
+
+        </tr>
+    </thead>
+
+    <!-- <tbody>:Groups the main body data of the table -->
+        <tbody>
+            <tr>
+                <!-- <td>:Standard table cell used to diaplay data-->
+                <td><b>Monday</b></td>
+                <td>C Programming</td>
+                <td>HTML5 & CSS</td>
+                
+                <!-- rowspan= "2" :Merges this cell vertically across 2 rows -->
+                 <td rowspan="2" align="center"><b>LUNCH</b></td>
+                 <td>Web Development Lab</td>
+            </tr>
+
+            <tr>
+                <td><b>Tuesday</b></td>
+
+                <!-- colspan="2" :Merges this cell horizontally across 2 columns  -->
+                 <td colspan="2" align="center">Lab Session</td>
+                 <td>DBMS Lab</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

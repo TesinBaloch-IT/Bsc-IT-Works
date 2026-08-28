@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1- Registration Form</title>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <!-- <form>: Container tag used to collect user data-->
+        <form action="#" method="POST">
+
+            <!-- <label>:Displays the name/label for the input box-->
+            <!--<iput type="text"> : Creates a standard text onput field-->
+            <!--required: Makes it mandatory to fill out this box-->
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+            <br><br>
+
+            <!--type="email": Check for a valid email address format-->
+            <label for ="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"required>
+            <br><br>
+
+            <!--type="password": Hides characters as dots(...) for privacy-->
+            <label for="password" >Password:</label><br>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <!--type="radio": Used to select ONLY 1 option from multiple choices-->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" balue="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <!-- <select>:Create a dropdown selection list -->
+            <!-- <option>:Defines an individual choice inside the drop-down -->
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course">
+                <option value="bscit">BSc IT</option>
+                <option value="bca">BCA</option>
+            </select>
+            <br><br>
+
+            <!-- type="checkbox": Allows selecting multiple option at once -->
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="coding" name="hobbies" value="coding">
+            <label for="coding">Coding</label> 
+            
+            <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+            <label for="gaming">Gaming</label>
+            <br><br>
+
+            <!-- <textarea>:LArge text box for multi-line input(address/bio) -->
+            <label for ="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+            <br><br>
+            
+            <!-- type="submit":Sends the form data -->
+            <!-- type="reset": Clears all fileds int the form -->
+             <button type="submit">Submit</button>
+             <button type="reset">Reset</button>
+        </form>
+</body>
+</html>
