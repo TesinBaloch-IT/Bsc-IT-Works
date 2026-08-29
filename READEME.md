@@ -41,4 +41,4 @@ This repository contains basic to intermediate HTML5 practice tasks ceated durin
 ## How to Run Locally
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/TesinBaloch-IT/HTML-Tasks.git](https://github.com/TesinBaloch-IT/HTML-Tasks.git)
+  git clone [https://github.com/TesinBaloch-IT/HTML-Tasks.git](https://github.com/TesinBaloch-IT/HTML-Tasks.git)
