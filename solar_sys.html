@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Animation</title>
+    <link rel="stylesheet" href="solar_sys.css">
+</head>
+<body>
+
+    <!--Controls Panel-->
+    <div class="controls">
+        <button id="toggleBtn">Pause</button>
+        <div class="slider-container">
+            <label for="speed">Earth Speed:</label>
+            <input type="range" id="speed" min="5" max="60" value="36" reverse>
+        </div>
+    </div>
+
+    <!-- Solar System Container -->
+     <div class="container">
+        <div class="sun"></div>
+        <div class="earth" id="earth">
+            <div class="moon"></div>
+        </div>
+     </div>
+     
+    <script src="solar_sys.js"></script>
+</body>
+</html>
