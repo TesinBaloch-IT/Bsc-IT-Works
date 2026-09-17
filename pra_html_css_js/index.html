@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>DOM Manipulation Quick Revision Notes: <br>
+    The 3 Musketeers of Web Development<br>
+
+Advantages of External JavaScript<br>
+
+The Window Object & DOM Definition<br>
+
+Selecting Elements (DOM Selectors)<br>
+
+Element Properties<br>
+
+Attribute Manipulation<br>
+
+Modifying Inline Styles<br>
+
+Creating & Inserting Elements<br>
+
+Deleting Elements<br>
+
+Practice Questions & ClassList Solution
+    </h3>
+
+
+   <p class="para">this is a simple line.</p> 
+    <!-- <h2>Hello JavaScript</h2> -->
+    <!-- <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+      <div class="box1. Connecting Files & Advantages
+
+<style> -->
+ <!-- connects HTML with CSS; <script> connects HTML with JS.
+
+External JS benefits: Code reusability, modularity, browser caching, easier debugging, and Git/teamwork friendliness.
+
+2. Core Objects & Definitions
+
+Window Object: Global browser object representing the open browser window (created automatically by the browser).
+
+DOM (Document Object Model): A tree representation of the HTML document created by the browser when a webpage loads.
+
+3. Selecting Elements
+
+document.getElementById("id"): Selects a single element by ID.
+
+document.getElementsByClassName("className"): Selects an HTML Collection by class.
+
+document.getElementsByTagName("tagName"): Selects an HTML Collection by tag name.
+
+document.querySelector("selector"): Selects the first matching element.
+
+document.querySelectorAll("selector"): Selects all matching elements (NodeList).
+
+4. Element Properties
+
+tagName: Returns the tag name of an element node.
+
+innerText: Returns visible text content of an element and its children.
+
+innerHTML: Returns complete HTML markup inside an element.
+
+textContent: Returns full text content, including hidden text.
+
+5. Attributes & Styling
+
+getAttribute(attr): Fetches the value of a specific attribute.
+
+setAttribute(attr, value): Updates or sets a new attribute value.
+
+node.style.propertyName: Modifies inline CSS styles directly via JS.
+
+6. Inserting & Removing Elements
+
+Creation: document.createElement("tagName")
+
+Insertion:
+
+node.append(el): Adds element at the end (inside node).
+
+node.prepend(el): Adds element at the start (inside node).
+
+node.before(el): Adds element before the node (outside node).
+
+node.after(el): Adds element after the node (outside node).
+
+Deletion: node.remove() deletes the targeted element.
+
+Aapke Q2 ka answer (classList solve problem):
+
+JavaScript
+// Class overwrite hone se bachane ke liye setAttribute ki jagah classList.add() use karein:
+let para = document.querySelector("p");
+para.classList.add("newClass"); // Ab purani class bhi rahegi aur nayi class bhi add h</h3>
+<p class="content">i am a paragraph.</p>
+
+   <!-- <div id="box" name="JSDiv">This is a div
+    <ul>List
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+    </ul>
+    
+   </div>">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+    practice solution -->
+ <!-- <div> 
+    <h3>Fruits</h3>
+    <ul>
+        <li>Mango</li> <li>Litchi</li> <li>Banana</li>
+    </ul>
+ </div> -->
+ <script src="script.js"></script>
+</body>
+</html>
+<!-- window tre like sturucture : window -> document-> html -> head,body(hirachical stucture) -->

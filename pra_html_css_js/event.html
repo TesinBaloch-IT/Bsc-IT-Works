@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>  <button id="mode">Change mode</button>
+    <p>Welcome to my website!</p>
+    <h3>What are Events in JavaScript?<br>
+
+Types of Events (Mouse, Keyboard, Form)<br>
+
+3 Ways to Handle Events & Priority Rules<br>
+
+Inline vs External Event Handling<br>
+
+Inline Event Handling Syntax & Example<br>
+
+Understanding the Event Object (e / evt)<br>
+
+Event Object Properties (e.target, e.type, e.clientX, e.clientY)<br>
+
+Event Listeners (addEventListener & removeEventListener)<br>
+
+Handling Multiple Tasks with Event Listeners<br>
+
+Removing Event Listeners & Callback Reference Rule<br>
+
+Practice Project: Dark/Light Mode Toggle Button</h3>
+  
+  
+    <!-- <button onclick="console.log('button ws clicked!');alert('hello!');">Click Me!</button>
+    
+    <button ondblclick="console.log('button ws clicked!');">Click Me 2 times!</button> -->
+   
+    <!-- onclick as a event - count for click,ondblclick -call the double click,[Double -clicking the button displays the messages, where as a single click prints nothing.] 
+     alert - get the alert , this work call a event heandling-->
+
+     <!-- <div onmouseover="console.log('you are inside div');"> this is a div.</div>  1. inline event heandling -->
+    <script src="event.js"></script>
+</body>
+</html>
+<!-- 
+==================================================
+1. WHAT ARE EVENTS & TYPES
+==================================================
+- Event is a change in state of an object to notify code execution.
+- Common Types: Mouse (click, dblclick), Keyboard (keyup, keydown), Form (submit).
+
+==================================================
+2. EVENT HANDLING METHODS & PRIORITY
+==================================================
+- Priority: JS Handling > Inline Handling.
+- Traditional JS Handling: node.event = () => {} (Overwrites previous handlers, allows only 1 handler).
+
+==================================================
+3. THE EVENT OBJECT (e / evt)
+==================================================
+- Automatically passed to event handlers.
+- Contains metadata: e.target (element), e.type (event type), e.clientX/Y (coordinates).
+
+==================================================
+4. EVENT LISTENERS (BEST PRACTICE)
+==================================================
+- node.addEventListener(event, callback): Allows multiple handlers for a single event.
+- node.removeEventListener(event, callback): Removes a handler.
+  * Note: The callback reference function MUST be the exact same variable reference to be removed.
+
+==================================================
+5. PRACTICE: DARK/LIGHT MODE TOGGLE
+==================================================
+- Uses classList.add() and classList.remove() to toggle CSS classes dynamically on body.
+-->
