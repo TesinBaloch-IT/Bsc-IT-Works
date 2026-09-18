@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="card-container">
+     <div  class="card" id="authCard">
+
+        <!-- LOGIN FORM(FRONT) -->
+         <div class="form-box login-box">
+            <h2>Welcome Back</h2>
+            <p>Login to continue your journey</p>
+
+            <form autocomplete="off">
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" autocomplete="new-password" required>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#" >Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <p class="switch-text">
+                Don't have an account? <a href="#" onclick="flipCard()">Sign Up</a>
+            </p>
+         </div>
+
+         <!-- SIGN UP FORM (BACK) -->
+          <div class="form-box signup-box">
+            <h2>Create Account</h2>
+            <p>Start your journey with us</p>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <input type="submit" placeholder="Confirm Password" required>
+                </div>
+
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+
+            <p class="switch-text">
+                Already have an account? <a href="#" onclick="flipCard()">Login</a>
+            </p>
+          </div>
+
+     </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
